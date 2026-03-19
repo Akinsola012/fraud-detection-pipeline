@@ -1,0 +1,167 @@
+[0m02:38:21.815645 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000190A94D9BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000190A94D9A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000190ADBFB350>]}
+
+
+============================== 02:38:21.834040 | 9dcdfb07-fb9b-4bd2-984c-c52ac87194c7 ==============================
+[0m02:38:21.834040 [info ] [MainThread]: Running with dbt=1.11.7
+[0m02:38:21.835936 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'target_path': 'None', 'cache_selected_only': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\akins\\.dbt', 'debug': 'False', 'static_parser': 'True', 'log_cache_events': 'False', 'empty': 'None', 'quiet': 'False', 'log_format': 'default', 'use_colors': 'True', 'partial_parse': 'True', 'version_check': 'True', 'log_path': 'logs', 'introspect': 'True', 'no_print': 'None', 'fail_fast': 'False', 'invocation_command': 'dbt init fraud_detection', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'write_json': 'True'}
+[0m02:38:21.920357 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\akins\.dbt
+[0m02:38:21.927028 [debug] [MainThread]: Starter project path: C:\Users\akins\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\include\starter_project
+[0m02:38:22.078217 [info ] [MainThread]: 
+Your new dbt project "fraud_detection" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m02:38:22.080268 [info ] [MainThread]: Setting up your profile.
+[0m02:43:07.357676 [error] [MainThread]: Encountered an error:
+
+[0m02:43:07.362708 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\akins\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akins\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akins\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\cli\main.py", line 483, in init
+    results = task.run()
+              ^^^^^^^^^^
+  File "C:\Users\akins\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\init.py", line 346, in run
+    self.setup_profile(profile_name)
+  File "C:\Users\akins\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\init.py", line 262, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+  File "C:\Users\akins\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\init.py", line 179, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+  File "C:\Users\akins\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\init.py", line 163, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akins\AppData\Local\Programs\Python\Python311\Lib\site-packages\dbt\task\init.py", line 129, in generate_target_from_input
+    target[key] = click.prompt(
+                  ^^^^^^^^^^^^^
+  File "C:\Users\akins\AppData\Local\Programs\Python\Python311\Lib\site-packages\click\termui.py", line 171, in prompt
+    value = prompt_func(prompt)
+            ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\akins\AppData\Local\Programs\Python\Python311\Lib\site-packages\click\termui.py", line 154, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m02:43:07.365439 [debug] [MainThread]: Command `dbt init` failed at 02:43:07.365439 after 285.76 seconds
+[0m02:43:07.366573 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000190A6048990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000190ADBFA650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000190ABCBDA10>]}
+[0m02:43:07.367519 [debug] [MainThread]: Flushing usage events
+[0m02:43:08.529595 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:43:29.785916 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CFBB36650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CFBB2BED0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CFBB36710>]}
+
+
+============================== 02:43:29.789953 | 559a7471-49ec-47f7-ac13-633452285509 ==============================
+[0m02:43:29.789953 [info ] [MainThread]: Running with dbt=1.11.7
+[0m02:43:29.789953 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'target_path': 'None', 'cache_selected_only': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\akins\\.dbt', 'debug': 'False', 'static_parser': 'True', 'log_cache_events': 'False', 'empty': 'None', 'quiet': 'False', 'log_format': 'default', 'use_colors': 'True', 'partial_parse': 'True', 'version_check': 'True', 'log_path': 'logs', 'introspect': 'True', 'invocation_command': 'dbt init fraud_detection', 'fail_fast': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'write_json': 'True', 'use_experimental_parser': 'False'}
+[0m02:43:29.827121 [info ] [MainThread]: A project called fraud_detection already exists here.
+[0m02:43:29.827121 [debug] [MainThread]: Command `dbt init` succeeded at 02:43:29.827121 after 0.18 seconds
+[0m02:43:29.827121 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CF4EF8990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CFB9D2A10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027CF4C19790>]}
+[0m02:43:29.827121 [debug] [MainThread]: Flushing usage events
+[0m02:43:30.729461 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:45:31.112848 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000286D1621C10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000286D1628850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000286D16AB790>]}
+
+
+============================== 02:45:31.117479 | e6ade525-db12-4669-8eb5-286a18b36fc6 ==============================
+[0m02:45:31.117479 [info ] [MainThread]: Running with dbt=1.11.7
+[0m02:45:31.117479 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'write_json': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'empty': 'None', 'debug': 'False', 'static_parser': 'True', 'log_cache_events': 'False', 'profiles_dir': 'C:\\Users\\akins\\.dbt', 'quiet': 'False', 'log_format': 'default', 'use_colors': 'True', 'partial_parse': 'True', 'version_check': 'True', 'log_path': 'logs', 'introspect': 'True', 'invocation_command': 'dbt debug', 'fail_fast': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'target_path': 'None', 'use_experimental_parser': 'False'}
+[0m02:45:31.148423 [info ] [MainThread]: dbt version: 1.11.7
+[0m02:45:31.148423 [info ] [MainThread]: python version: 3.11.0
+[0m02:45:31.154417 [info ] [MainThread]: python path: C:\Users\akins\AppData\Local\Programs\Python\Python311\python.exe
+[0m02:45:31.154417 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m02:45:31.154417 [info ] [MainThread]: Using profiles dir at C:\Users\akins\.dbt
+[0m02:45:31.154417 [info ] [MainThread]: Using profiles.yml file at C:\Users\akins\.dbt\profiles.yml
+[0m02:45:31.154417 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\akins\fraud-detection-pipeline\dbt\dbt_project.yml
+[0m02:45:31.158930 [info ] [MainThread]: Configuration:
+[0m02:45:31.159952 [info ] [MainThread]:   profiles.yml file [[31mERROR not found[0m]
+[0m02:45:31.160682 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m02:45:31.162689 [info ] [MainThread]: Required dependencies:
+[0m02:45:31.162689 [debug] [MainThread]: Executing "git --help"
+[0m02:45:31.250044 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m02:45:31.250044 [debug] [MainThread]: STDERR: "b''"
+[0m02:45:31.251043 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m02:45:31.251043 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m02:45:31.252550 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m02:45:31.253559 [info ] [MainThread]: dbt looked for a profiles.yml file in C:\Users\akins\.dbt\profiles.yml, but did
+not find one. For more information on configuring your profile, consult the
+documentation:
+
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m02:45:31.254560 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\akins\fraud-detection-pipeline\dbt\dbt_project.yml> not found
+
+[0m02:45:31.256559 [debug] [MainThread]: Command `dbt debug` failed at 02:45:31.256559 after 0.27 seconds
+[0m02:45:31.256559 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000286D16AB150>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000286C97E97D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000286D1621810>]}
+[0m02:45:31.257559 [debug] [MainThread]: Flushing usage events
+[0m02:45:32.420770 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m02:46:47.099565 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024CB0533490>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024CB3C01CD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024CB3992690>]}
+
+
+============================== 02:46:47.105131 | b5eacb65-0a68-412a-be39-9954ecd18732 ==============================
+[0m02:46:47.105131 [info ] [MainThread]: Running with dbt=1.11.7
+[0m02:46:47.106133 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'target_path': 'None', 'cache_selected_only': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\akins\\.dbt', 'debug': 'False', 'static_parser': 'True', 'log_cache_events': 'False', 'empty': 'None', 'log_format': 'default', 'quiet': 'False', 'use_colors': 'True', 'partial_parse': 'True', 'version_check': 'True', 'log_path': 'logs', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'no_print': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'write_json': 'True', 'use_experimental_parser': 'False'}
+[0m02:46:47.148055 [info ] [MainThread]: dbt version: 1.11.7
+[0m02:46:47.148055 [info ] [MainThread]: python version: 3.11.0
+[0m02:46:47.148055 [info ] [MainThread]: python path: C:\Users\akins\AppData\Local\Programs\Python\Python311\python.exe
+[0m02:46:47.148055 [info ] [MainThread]: os info: Windows-10-10.0.26200-SP0
+[0m02:46:47.269053 [info ] [MainThread]: Using profiles dir at C:\Users\akins\.dbt
+[0m02:46:47.271828 [info ] [MainThread]: Using profiles.yml file at C:\Users\akins\.dbt\profiles.yml
+[0m02:46:47.271828 [info ] [MainThread]: Using dbt_project.yml file at C:\Users\akins\fraud-detection-pipeline\dbt\dbt_project.yml
+[0m02:46:47.271828 [info ] [MainThread]: adapter type: postgres
+[0m02:46:47.271828 [info ] [MainThread]: adapter version: 1.10.0
+[0m02:46:47.271828 [info ] [MainThread]: Configuration:
+[0m02:46:47.278563 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m02:46:47.279578 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m02:46:47.281573 [info ] [MainThread]: Required dependencies:
+[0m02:46:47.282579 [debug] [MainThread]: Executing "git --help"
+[0m02:46:47.352597 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m02:46:47.354158 [debug] [MainThread]: STDERR: "b''"
+[0m02:46:47.354158 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m02:46:47.355169 [info ] [MainThread]: Connection:
+[0m02:46:47.356382 [info ] [MainThread]:   host: 127.0.0.1
+[0m02:46:47.357381 [info ] [MainThread]:   port: 5433
+[0m02:46:47.358418 [info ] [MainThread]:   user: fraud_user
+[0m02:46:47.359381 [info ] [MainThread]:   database: fraud_db
+[0m02:46:47.360411 [info ] [MainThread]:   schema: analytics
+[0m02:46:47.361838 [info ] [MainThread]:   connect_timeout: 10
+[0m02:46:47.362489 [info ] [MainThread]:   role: None
+[0m02:46:47.363525 [info ] [MainThread]:   search_path: None
+[0m02:46:47.364501 [info ] [MainThread]:   keepalives_idle: 0
+[0m02:46:47.365502 [info ] [MainThread]:   sslmode: None
+[0m02:46:47.367504 [info ] [MainThread]:   sslcert: None
+[0m02:46:47.369504 [info ] [MainThread]:   sslkey: None
+[0m02:46:47.372063 [info ] [MainThread]:   sslrootcert: None
+[0m02:46:47.373170 [info ] [MainThread]:   application_name: dbt
+[0m02:46:47.375871 [info ] [MainThread]:   retries: 1
+[0m02:46:47.377874 [info ] [MainThread]: Registered adapter: postgres=1.10.0
+[0m02:46:47.905162 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m02:46:51.801326 [debug] [MainThread]: Using postgres connection "debug"
+[0m02:46:51.803479 [debug] [MainThread]: On debug: select 1 as id
+[0m02:46:51.804078 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m02:46:51.816335 [debug] [MainThread]: SQL status: SELECT 1 in 0.012 seconds
+[0m02:46:51.817425 [debug] [MainThread]: On debug: Close
+[0m02:46:51.818531 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m02:46:51.819614 [info ] [MainThread]: [31m1 check failed:[0m
+[0m02:46:51.820698 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Users\akins\fraud-detection-pipeline\dbt\dbt_project.yml> not found
+
+[0m02:46:51.822785 [debug] [MainThread]: Command `dbt debug` failed at 02:46:51.822785 after 4.88 seconds
+[0m02:46:51.823895 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m02:46:51.824495 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024CB52E0BD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024CB52E0850>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024CB3C02190>]}
+[0m02:46:51.825083 [debug] [MainThread]: Flushing usage events
+[0m02:46:52.899285 [debug] [MainThread]: An error was encountered while trying to flush usage events
