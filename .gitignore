@@ -1,0 +1,79 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pythonenv*
+
+# Docker
+.dockerignore
+Dockerfile*
+docker-compose*.yml
+*.log
+*.pid
+*.seed
+*.pid.lock
+
+# PostgreSQL
+*.sql
+*.dump
+*.backup
+
+# DBT
+dbt_packages/
+logs/
+target/
+dbt_project.yml
+profiles.yml
+
+# VS Code
+.vscode/
+*.code-workspace
+.history/
+
+# IDE
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Secrets
+*.env
+*.env.local
+*.env.*.local
+secrets/
+credentials.json
+service-account.json
+
+# Data
+data/
+*.csv
+*.parquet
+*.feather
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+.coverage
+htmlcov/
+.pytest_cache/
+.coverage.*
+*.cover
+*.py,cover
+.hypothesis/
